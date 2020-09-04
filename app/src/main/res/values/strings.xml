@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">github TV Demo</string>
+    <string name="call_title">请选择类型</string>
+    <string name="call_adult">成人</string>
+    <string name="call_child">儿童</string>
+    <string name="error_tip_login_failed">登录失败，请稍后重新尝试</string>
+    <string name="message_login">扫码登录</string>
+    <string name="message_login_tip">打开微信、扫描右侧二维码，登录\n和缓视频医生小程序关联电视</string>
+    <string name="message_is_not_member">您还不是和缓视频医生会员，\n请用微信扫右侧二维码，\n在和缓视频医生小程序中联系医助成为会员</string>
+    <string name="button_login">登录</string>
+</resources>

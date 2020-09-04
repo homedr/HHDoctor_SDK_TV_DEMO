@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/call_font_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/call_title"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/call_child"
+            style="@style/call_font_style"
+            android:drawableTop="@drawable/icon_call_child"
+            android:focusable="true"
+            android:text="@string/call_child"
+            android:nextFocusRight="@id/call_adult"
+            android:drawablePadding="-20dp"
+            android:nextFocusDown="@id/logout"/>
+
+        <Button
+            android:id="@+id/call_adult"
+            style="@style/call_font_style"
+            android:layout_marginStart="220dp"
+            android:drawableTop="@drawable/icon_call_all"
+            android:focusable="true"
+            android:text="@string/call_adult"
+            android:nextFocusLeft="@id/call_child"
+            android:nextFocusRight="@id/logout"
+            android:drawablePadding="-20dp"
+            android:nextFocusDown="@id/logout"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_logout_bg"/>
+</RelativeLayout>
