@@ -32,8 +32,8 @@
 
 * [三、常见问题](#三常见问题)
     * [1. AndroidManifest合并冲突问题](#1-androidmanifest合并冲突问题)
-            * [2. error:style attribute '@android:attr/windowEnterAnimation' not found](#2-errorstyle-attribute-androidattrwindowenteranimation-not-found)
-            * [3. 如果遇到库冲突也就是duplicate某个包这说明库冲突了，这种问题可以用如下方法解决](#3-如果遇到库冲突也就是duplicate某个包这说明库冲突了这种问题可以用如下方法解决)
+    * [2. error:style attribute '@android:attr/windowEnterAnimation' not found](#2-errorstyle-attribute-androidattrwindowenteranimation-not-found)
+    * [3. 如果遇到库冲突也就是duplicate某个包这说明库冲突了，这种问题可以用如下方法解决](#3-如果遇到库冲突也就是duplicate某个包这说明库冲突了这种问题可以用如下方法解决)
 
 * [四、Demo下载地址](#四demo下载地址)
 * [五、版本更新说明](#五版本更新说明)
