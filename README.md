@@ -141,7 +141,6 @@ HHSDKOptions options = new HHSDKOptions("sdkProductId");
 |dev|是否开始测试服模式，开启后连接测试服|
 |isOpenCamera|视频过程中是否开启拍照|
 |mOrientation|屏幕方向 ActivityInfo.SCREEN_ORIENTATION_PORTRAIT 或 ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE|
-|mOrientation|屏幕方向 ActivityInfo.SCREEN_ORIENTATION_PORTRAIT 或 ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE|
 |useSampleRate16K_HZ|是否使用16000 也可以叫做16k的音频通道，默认这个不设置，如果在有些设备上用的16k通道可以开启这个选项设置为true|
 |useSoundStreamMusic|是否播放铃声使用Music通道，一般不用设置|
 
