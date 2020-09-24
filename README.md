@@ -1,4 +1,4 @@
-## 视频医生 Android SDK TV版接入文档 V3.0.2.09081811
+## 视频医生 Android SDK TV版接入文档 V3.0.4.09231508
 
 ## [查看版本更新说明](#五版本更新说明)
 
@@ -77,7 +77,7 @@ repositories {
 ##### 2.2 在build.gradle文件中dependencies中配置库的引用
 
 ```
-implementation 'com.hhmedic.android.sdk:hh_tv:3.0.2.09081811'
+implementation 'com.hhmedic.android.sdk:hh_tv:3.0.4.09231508'
 ```
 
 <span style="color:red;">注：添加以上配置后需要进行gradle sync才能同步生效，配置maven库地址的时候不能省略用户名和密码，否则同步不下来。</span>
@@ -383,4 +383,5 @@ https://github.com/homedr/HHDoctor_SDK_TV_DEMO
 
 |版本号|说明|
 |---|---|
+|3.0.4.09231508|1.优化流程 <br/> 2.去除sdk内部默认图标，有可能会影像接入APP图标|
 |3.0.2.09081811|始发版本|
