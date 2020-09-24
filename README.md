@@ -1,4 +1,4 @@
-## 视频医生 Android SDK TV版接入文档 V3.0.4.09231508
+## 视频医生 Android SDK TV版接入文档 V3.0.4.09241452
 
 ## [查看版本更新说明](#五版本更新说明)
 
@@ -77,7 +77,7 @@ repositories {
 ##### 2.2 在build.gradle文件中dependencies中配置库的引用
 
 ```
-implementation 'com.hhmedic.android.sdk:hh_tv:3.0.4.09231508'
+implementation 'com.hhmedic.android.sdk:hh_tv:3.0.4.09241452'
 ```
 
 <span style="color:red;">注：添加以上配置后需要进行gradle sync才能同步生效，配置maven库地址的时候不能省略用户名和密码，否则同步不下来。</span>
@@ -143,6 +143,7 @@ HHSDKOptions options = new HHSDKOptions("sdkProductId");
 |mOrientation|屏幕方向 ActivityInfo.SCREEN_ORIENTATION_PORTRAIT 或 ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE|
 |useSampleRate16K_HZ|是否使用16000 也可以叫做16k的音频通道，默认这个不设置，如果在有些设备上用的16k通道可以开启这个选项设置为true|
 |useSoundStreamMusic|是否播放铃声使用Music通道，一般不用设置|
+|mExtensionString|呼叫附加信息，如果每次呼叫附加信息一致，可以在这里缺省设置一个值|
 
 ##### 1.3 SDK初始化
 
@@ -239,6 +240,20 @@ public static boolean isLogined(Context context)
 | 参数定义 | 说明 |
 | --- | --- |
 |Context context|上下文，当前呼叫发起Activity|
+
+##### 2.7 设置呼叫附加参数
+
+> 注意这个方法需要在呼叫前进行设置才会生效
+
+```java
+public static void setExtension(String ext)
+```
+
+参数说明：
+
+| 参数定义 | 说明 |
+| --- | --- |
+|String ext|文本数据，支持json格式|
 
 #### 3. 回调说明
 
@@ -382,5 +397,6 @@ https://github.com/homedr/HHDoctor_SDK_TV_DEMO
 
 |版本号|说明|
 |---|---|
+|3.0.4.09241452|1.新增呼叫附加数据设置|
 |3.0.4.09231508|1.优化流程 <br/> 2.去除sdk内部默认图标，有可能会影像接入APP图标|
 |3.0.2.09081811|始发版本|
