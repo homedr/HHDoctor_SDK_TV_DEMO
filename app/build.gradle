@@ -8,7 +8,7 @@ apply plugin: 'bugly'
 
 apply plugin: 'kotlin-android-extensions'
 
-def sdkVersion = "3.0.4.09231508"
+def sdkVersion = "3.0.4.09241452"
 
 def supportVersion = "27.1.1"
 
